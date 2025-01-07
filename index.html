@@ -14,6 +14,10 @@
       rel="stylesheet"
       crossorigin="anonymous"
     />
+    <link
+      rel="icon"
+      href="https://raw.githubusercontent.com/gramener/assets/main/straive-favicon.svg"
+    />
     <style>
       #codeInput {
         font-family: monospace;
@@ -62,6 +66,9 @@
     </style>
   </head>
   <body>
+    
+
+
     <div class="container-fluid py-3">
       <h1 class="mb-4"><i class="bi bi-code-square"></i> Code Analysis &amp; Diagram Generator</h1>
 
@@ -253,7 +260,9 @@
                           role: "user",
                           content: [{
                               type: "text",
-                              text: `Generate a Mermaid ${diagramTypes[type]} based on this code. Respond with ONLY the Mermaid code, no other text:
+                              text: `Generate a Mermaid ${diagramTypes[type]} based on this code. 
+                              Respond with ONLY the Mermaid code, no other text. 
+                              Ensure it is valid for Mermaid v11:
 
                               ${code}`
                           }]
